@@ -1,0 +1,112 @@
+header {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: $space-2;
+  margin-bottom: $space-2;
+  h1,h2,h3 {
+    margin-bottom: $space-base;
+    line-height: 1;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  img {
+    height: 40px;
+  }
+  nav {
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      a {
+        color: $gray-dark;
+        margin-right: 24px;
+        -webkit-transition: all 50ms ease-in-out;
+        transition: all 50ms ease-in-out;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          color: $color-primary;
+          li {
+            border-bottom: solid 3px $color-secondary;
+          }
+        }
+        li {
+          margin: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .bktbp-logo {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  #menu-icon {
+    display: none;
+    height: 24px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  #close-icon {
+    display: none;
+  }
+}
+.mobile-active {
+  height: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  nav {
+    display: flex;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    ul {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        height: 16.66%;
+        margin: 0;
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        li {
+
+        }
+        &:first-child {
+          height: 6.66%;
+        }
+      }
+    }
+  }
+  #close-icon {
+    display: block;
+    position: fixed;
+    right: 16px;
+    top: 48px;
+    z-index: 2;
+    opacity: .5;
+    img {
+      height: 24px;
+    }
+  }
+}
