@@ -1,11 +1,14 @@
-button {
+button, .btn-solid {
+  position: relative;
   width: 100%;
   max-width: 320px;
-  height: fit-content;
+  // height: fit-content;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-right: 24px;
+  padding-bottom: 13px;
+  padding-left: 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   margin-bottom: $space-2;
   background-color: $color-secondary;
   cursor: pointer;
@@ -16,14 +19,14 @@ button {
   text-transform: uppercase;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  box-shadow: 0px 6px 5px -6px rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 768px){
     max-width: 100%;
   }
-  &:hover,
   &:active,
   &:focus,
-  &:visited{
-    background-color: darken($color-secondary, 10);
+  &:visited {
+    box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.15);
   }
   &:active,
   &:focus{
@@ -86,77 +89,77 @@ button {
 }
 // Button with outline style
 .btn-outline {
-  border: solid 3px $color-secondary;
+  border: solid 2px $color-secondary;
   color: $color-secondary;
   background: transparent;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  &:hover{
+  &:hover,{
     background-color: $color-secondary;
     color: $color-inverse;
-    border: solid 3px $color-secondary;
+    border: solid 2px $color-secondary;
     color: $color-inverse;
   }
   // The part of the Button Colors Outline
   //Primary
   &.bg-color-primary {
-    border: solid 3px $color-primary;
+    border: solid 2px $color-primary;
     color: $color-primary;
-    &:hover{
+    &:hover,{
       background-color: $color-primary;
       color: $color-inverse;
-      border: solid 3px $color-primary;
+      border: solid 2px $color-primary;
       color: $color-inverse;
     }
   }
   //Secondary
   &.bg-color-secondary {
-    border: solid 3px $color-secondary;
+    border: solid 2px $color-secondary;
     color: $color-secondary;
     &:hover{
       background-color: $color-secondary;
       color: $color-inverse;
-      border: solid 3px $color-secondary;
+      border: solid 2px $color-secondary;
     }
   }
   //Success
   &.bg-color-success {
-    border: solid 3px $color-success;
+    border: solid 2px $color-success;
     color: $color-success;
     &:hover{
       background-color: $color-success;
       color: $color-inverse;
-      border: solid 3px $color-success;
+      border: solid 2px $color-success;
     }
   }
   //Informative
   &.bg-color-info {
-    border: solid 3px $color-info;
+    border: solid 2px $color-info;
     color: $color-info;
     &:hover{
       background-color: $color-info;
       color: $color-inverse;
-      border: solid 3px $color-info;
+      border: solid 2px $color-info;
     }
   }
   //Warning
   &.bg-color-warning {
-    border: solid 3px $color-warning;
+    border: solid 2px $color-warning;
     color: $color-warning;
     &:hover{
       background-color: $color-warning;
       color: $color-inverse;
-      border: solid 3px $color-warning;
+      border: solid 2px $color-warning;
     }
   }
   //Danger
   &.bg-color-danger {
-    border: solid 3px $color-danger;
+    border: solid 2px $color-danger;
     color: $color-danger;
     &:hover{
       background-color: $color-danger;
       color: $color-inverse;
-      border: solid 3px $color-danger;
+      border: solid 2px $color-danger;
     }
   }
 }
@@ -173,4 +176,26 @@ button {
       margin-right: 0;
     }
   }
+}
+//Ripple efect for button feedback
+.ripple{
+  overflow:hidden;
+}
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  animation: ripple-animation 2s;
+}
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
 }
