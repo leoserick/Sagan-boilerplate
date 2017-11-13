@@ -1,5 +1,5 @@
 <!-- Ripple Efect -->
-<script>
+
   (function (window, $) {
 
     $(function() {
@@ -36,4 +36,4 @@
     });
 
   })(window, jQuery);
-</script>
+
