@@ -1,4 +1,4 @@
-<!-- Ripple Efect -->
+
 
   (function (window, $) {
 
