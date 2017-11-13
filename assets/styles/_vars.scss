@@ -43,15 +43,4 @@ $font-family-base: 'BrixSans', sans-serif;
 $headings-font-family: $font-family-base;
 $font-size-base: 16px;
 
-// media queries
-$max-width-screen: 1232px;
-$units-stack: 768px;
-$screen-xs-min: 609px;
-$screen-sm-min: 808px + 17;
-$screen-md-min: 1032px + 17;
-$screen-lg-min: 1240px + 17;
-$screen-xs-max: $screen-sm-min - 1;
 
-// Variables para vista de producto.
-$stock-available-color: #5cb85c;
-$action-button-color: $color-primary;
