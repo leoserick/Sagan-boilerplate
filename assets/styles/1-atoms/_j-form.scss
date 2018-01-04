@@ -33,6 +33,7 @@ input[type=password],
 textarea, select {
   min-width: 160px;
   width: 100%;
+  overflow: hidden;
   background-color: transparent;
   padding-top: 2px;
   padding-left: $space-base;
@@ -64,6 +65,7 @@ select {
 
 input[type=file]{
   margin-bottom: $space-2;
+  width: 100%;
 }
 input[type=radio],
 input[type=checkbox]{

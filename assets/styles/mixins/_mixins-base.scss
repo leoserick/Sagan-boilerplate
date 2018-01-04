@@ -15,12 +15,12 @@
 //       Mixins de media queries by kikin
 // ===================================================================
 @mixin mobile{
-    @media screen and (max-with: $mobile) {
+    @media screen and (max-width: $mobile) {
         @content;
     }
 }
 @mixin tablet{
-    @media screen and (max-with: $tablet) {
+    @media screen and (max-width: $tablet) {
         @content;
     }
 }
