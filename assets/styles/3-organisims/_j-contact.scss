@@ -1,0 +1,61 @@
+.main-contact-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            width: 90%;
+            margin-bottom: 48px;
+        }
+        @include mobile{
+            width: 95%;
+            margin-bottom: 48px;
+        }
+        button{
+            max-width: 100%;
+            letter-spacing: 4px;
+        }
+
+    }
+    .information-content{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        @include tablet{
+            width: 90%;
+        }
+        @include mobile{
+            width: 95%;
+        }
+        .p-img-left{
+            margin: 24px 0;
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                
+            }
+            img{
+                max-width: 23%;
+                @include mobile{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

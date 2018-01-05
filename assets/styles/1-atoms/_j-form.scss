@@ -12,6 +12,7 @@
 form {
   display: flex;
   fieldset {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -31,7 +32,7 @@ input[type=tel],
 input[type=url],
 input[type=password],
 textarea, select {
-  min-width: 160px;
+  min-width: 100%;
   width: 100%;
   overflow: hidden;
   background-color: transparent;
@@ -72,4 +73,15 @@ input[type=checkbox]{
   margin-top: 4px;
   margin-bottom: $space-2;
   margin-left: $space-base;
+}
+
+input.error, textarea.error, select.error{
+  border-color:#F44336!important;
+}
+label.error{
+  color: #F44336;
+  position: absolute;
+  top: 12px;
+  font-size: 11px;
+  right: 0;
 }

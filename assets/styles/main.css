@@ -213,6 +213,71 @@ body {
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
 
+.margin-48 {
+  margin-top: 48px; }
+
+.j-workspace {
+  box-sizing: border-box; }
+  .j-workspace .j-wrap {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; }
+  .j-workspace .j-wrap-80 {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 985.6px; }
+  .j-workspace .j-wrap-90 {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 1108.8px; }
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  @media screen and (max-width: 768px) {
+    .grid {
+      flex-direction: column; } }
+  .grid .unit {
+    transition: width 200ms ease-in-out; }
+    .grid .unit.half {
+      width: 50%;
+      padding-right: 16px; }
+      .grid .unit.half:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.half {
+          width: 100%;
+          padding-right: 0; } }
+    .grid .unit.third {
+      width: 33%;
+      padding-right: 16px; }
+      .grid .unit.third:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.third {
+          width: 100%;
+          padding-right: 0; } }
+    .grid .unit.fourth {
+      width: 25%;
+      padding-right: 16px; }
+      .grid .unit.fourth:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.fourth {
+          width: 100%;
+          padding-right: 0; } }
+
 button, .btn-solid {
   position: relative;
   width: 100%;
@@ -361,6 +426,7 @@ button, .btn-solid {
 form {
   display: flex; }
   form fieldset {
+    width: 100%;
     display: flex;
     flex-direction: column; }
 
@@ -378,7 +444,7 @@ input[type=tel],
 input[type=url],
 input[type=password],
 textarea, select {
-  min-width: 160px;
+  min-width: 100%;
   width: 100%;
   overflow: hidden;
   background-color: transparent;
@@ -438,6 +504,16 @@ input[type=checkbox] {
   margin-top: 4px;
   margin-bottom: 16px;
   margin-left: 8px; }
+
+input.error, textarea.error, select.error {
+  border-color: #F44336 !important; }
+
+label.error {
+  color: #F44336;
+  position: absolute;
+  top: 12px;
+  font-size: 11px;
+  right: 0; }
 
 table {
   border-collapse: collapse;
@@ -563,6 +639,9 @@ img {
       display: flex;
       flex-direction: column;
       padding: 16px 24px; }
+
+.input-container {
+  position: relative; }
 
 .header-container {
   position: fixed;
@@ -808,5 +887,59 @@ footer {
       footer .j-wrap .footer-bottom p {
         color: #FFF;
         margin-bottom: 0; }
+
+.main-contact-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 32px; }
+  @media screen and (max-width: 900px) {
+    .main-contact-content {
+      flex-direction: column;
+      align-items: center; } }
+  @media screen and (max-width: 600px) {
+    .main-contact-content {
+      flex-direction: column;
+      align-items: center; } }
+  .main-contact-content form {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 900px) {
+      .main-contact-content form {
+        width: 90%;
+        margin-bottom: 48px; } }
+    @media screen and (max-width: 600px) {
+      .main-contact-content form {
+        width: 95%;
+        margin-bottom: 48px; } }
+    .main-contact-content form button {
+      max-width: 100%;
+      letter-spacing: 4px; }
+  .main-contact-content .information-content {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    @media screen and (max-width: 900px) {
+      .main-contact-content .information-content {
+        width: 90%; } }
+    @media screen and (max-width: 600px) {
+      .main-contact-content .information-content {
+        width: 95%; } }
+    .main-contact-content .information-content .p-img-left {
+      margin: 24px 0; }
+      @media screen and (max-width: 600px) {
+        .main-contact-content .information-content .p-img-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center; } }
+      .main-contact-content .information-content .p-img-left img {
+        max-width: 23%; }
+        @media screen and (max-width: 600px) {
+          .main-contact-content .information-content .p-img-left img {
+            margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
