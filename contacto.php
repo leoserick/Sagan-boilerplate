@@ -130,7 +130,16 @@
               <label>Telefono</label>
               <input type="tel" name="telefono" id="telefono">
             </div>
+<<<<<<< HEAD
            
+=======
+            <div class="input-container">
+              <!-- Checkbox with label  -->
+              <label>
+                <input name="check" type="checkbox" value=""> <b>Checkbox input</b>
+              </label>
+            </div>
+>>>>>>> 0f908f587ca8774406807e9d6b98f4f55ba0dd8c
             <div class="input-container">
               <label>Select field</label>
               <select name="opciones" id="form-select">
@@ -208,9 +217,13 @@
 
           console.log("se enviara un correo");
           contactoEnviarMensajeBtn_click();
+<<<<<<< HEAD
           //contactoEnviarDatos();   DESCOMENTAR SOLO CUANDO SE TENGA EL CORREO DEL ADMIN DE LA PAGINA EN EL ARCHIVO send-data.php EN LA VARIABLE $admin
 
           //estas funciones se encuentran en el script "enviarForm.js"
+=======
+          //contactoEnviarDatos();
+>>>>>>> 0f908f587ca8774406807e9d6b98f4f55ba0dd8c
       	}
           return false;
       });
